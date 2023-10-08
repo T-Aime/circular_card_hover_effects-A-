@@ -1,0 +1,163 @@
+body{
+    margin: auto;
+    font-family: sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        .A{
+            display: flex;
+            align-items: center;
+            P{
+                align-items: center;
+                width: 50%;
+                margin: 1rem;
+            }
+            .image{
+                width: 50%;
+                height: 30rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+    .btn{
+        width: 9rem;
+        height: 2.5rem;
+        color: #ffffff;
+        background: #5881f2;
+        border-radius: 20px;
+    }
+    .cleaners{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .valleur{
+        width: 100%;
+        height: 100%;
+        background: #46a6e2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -1rem;
+        padding-bottom: 5rem;
+        h2{
+            align-items: center;
+            color: #fff;
+            padding: #46a6e2;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        .container{
+            width: 100%;
+            height: 10rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            color: #fff;
+            background: #46a6e2;
+            margin-bottom: 5rem;
+            
+            .card{
+                position: relative;
+                border-radius: 250px;
+                width: 10rem;
+                height: 10rem;
+                transition: 0.3s ease-out;
+                overflow: hidden;
+                .imgbox{
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 80%;
+                        display: block;
+                        transition: 0.5s;
+                    }
+                }
+                .content{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 35%;
+                    padding: 25px;
+                    background: #5881f2;
+                    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    object-fit: cover;
+                    margin: 0;
+                }
+                .content:hover{
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    bottom: 0;
+                }
+                h3{
+                    text-align: center;
+                    font-size: 15px;
+                    margin-top: 0;
+                    object-position: top;
+                    object-fit: cover;
+                    position: relative;
+                    top: -1rem;
+                    bottom: 0.5rem;
+
+                }
+                p{
+                    text-align: center;
+                    font-size: 9.6px;
+                    margin: 0;
+                }    
+            }
+            .card:hover{
+                box-shadow: 0 0 8em rgb(215, 236, 95);
+            }
+        }
+        .btn{
+            color: #000000;
+            background: #ffffff;
+            font-size: 12px;
+        }
+        h3{
+            color: #ffffff;
+        }
+        
+    }
+}
+@media screen and (max-width: 2400px){
+    .banner{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (max-width: 1200px){
+    .product-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 992px){
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 576px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
